@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+*{
+  font-family: 'Poppins', sans-serif;
+}
+/* Resetting default margin and padding */
+body, h1, h2, p, ul {
+    margin: 0;
+    padding: 0;
+  }
+  
+/* Setting red theme colors */
+body {
+  background-color: #f7f7f7;
+  font-family: Arial, sans-serif;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff; /* Change background color to white */
+    padding: 15px 20px; /* Adjust padding as needed */
+    border: 2px solid #000000; /* Add a red border */
+    border-radius: 5px;
+    box-shadow: 0 0 5px #000000, 0 0 5px  #000000; /* Apply the glowing effect */
+    opacity: 1; /* Set opacity to make it always visible */
+  }
+  
+  .nav-title {
+    color: #000000; /* Title color */
+    font-weight: bold; /* Title font weight */
+  }
+  
+  nav ul {
+    list-style-type: none;
+    display: flex;
+    font-size: 16PX;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav ul li {
+    margin: 0 15px;
+    padding: 4px;
+    border-radius: 6px;
+    transition: box-shadow 0.3s;
+  }
+  
+  nav ul li:hover {
+    margin: 0 15px;
+    box-shadow: 0 0 10px #000000, 0 0 20px #000000;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: #000000; /* Change text color to red */
+  }
+
+/* Style for sections */
+section {
+    border-bottom: 1px solid #000000; /* Add a red border between sections */
+    padding-bottom: 20px; /* Add some space between the content and the border */
+    position: relative;
+  }
+  
+  /* Style the last section to remove the border at the bottom */
+  section:last-child {
+    border-bottom: none; /* Remove the border at the bottom of the last section */
+  }
+
+  section::after {
+    content: '';
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    box-shadow: 0 0 10px #000000, 0 0 20px #000000; /* Apply the glowing effect */
+    opacity: 3; /* Set opacity to make it always visible */
+  }
+/* Styling section headings */
+h2 {
+  color: #000000;
+}
+
+/* General paragraph styling */
+p {
+  line-height: 1.6;
+  margin-right: 600px;
+}
+
+/* Styling images in sections */
+section img {
+  width: 100%;
+  max-width: 500px;
+  display: block;
+  margin: 0 auto 20px;
+}
+
+/* Header styles with hover effect */
+header {
+  background-color: #000000; /* Reddish tone for the header */
+  text-align: center;
+  padding: 0px 0;
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+  height: 100%; /* Adjust the height as needed */
+  transition: background-color 0.3s; /* Adding transition effect */
+  box-shadow: 0 0 10px #000000; /* Apply the glowing effect */
+    opacity: 1; /* Set opacity to make it always visible */
+}
+
+header:hover {
+  background-color: #fff; /* Change background to white on hover */
+}
+
+/* Carousel styles with hover effect */
+.carousel {
+  display: flex;
+  width: 300%; /* Adjust width according to the number of slides */
+  animation: slideAnimation 8s infinite; /* Change the time here */
+  
+}
+
+.slide {
+  min-width: 33.33%;
+  height: 500px; /* Adjust slide height */
+  position: relative;
+  overflow: hidden;
+  display: flex; /* Use flexbox to align content */
+  
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.slide-content {
+  position: absolute;
+  bottom: 10px; /* Adjust vertical position */
+  left: 10px; /* Adjust horizontal position */
+  color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.5); /* Semi-transparent background */
+  text-align: left;
+  transition: color 0.3s, background 0.3s, box-shadow 0.3s; /* Adding transition effects */
+}
+
+
+
+.slide h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #000000;
+}
+
+.slide p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: black;
+}
+
+
+
+/* Align text content inside sections to the left */
+main section {
+  text-align: left;
+  padding: 20px;
+}
+
+@keyframes slideAnimation {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-33.33%);
+  }
+}
+
+/* Services Section styles */
+#services {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+/* Services Section styles */
+.service {
+    width: calc(50% - 10px); /* Adjust width for responsiveness */
+    margin-bottom: 20px;
+    position: relative;
+  }
+  
+  .service-text {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 5px 10px;
+    transition: color 0.3s, background 0.3s, box-shadow 0.3s; /* Adding transition effects */
+    
+  }
+
+
+footer {
+  text-align: center;
+  background-color: #333;
+  color: #fff;
+}
+
+  
+ 
